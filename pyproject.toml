@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pattern-rec"
+version = "0.1.0"
+description = ""
+authors = ["David, Chiu <david20571015@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+scikit-learn = "^1.1.1"
+numpy = "^1.22.4"
+Pillow = "^9.1.1"
+tensorflow = "^2.9.1"
+matplotlib = "^3.5.2"
+
+[tool.poetry.dev-dependencies]
+yapf = {extras = ["pyproject"], version = "^0.32.0"}
+pylint = "^2.13.9"
+toml = "^0.10.2"
+ipykernel = "^6.12.0"
+pydot = "^1.4.2"
+
+[tool.yapf]
+based_on_style = "google"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
